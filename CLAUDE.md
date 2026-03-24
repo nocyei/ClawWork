@@ -13,15 +13,15 @@ ClawWork is an OpenClaw desktop client inspired by Claude Cowork: three-panel la
 ## Architecture
 
 ```
-┌─────────────────────┐       ┌──────────────────────────┐
-│ OpenClaw Server      │  WS   │ ClawWork Desktop App     │
-│ (Node.js process)    │◄────►│ (Electron 34 process)     │
-│                     │       │                          │
-│ ┌─────────────────┐ │       │  React 19 UI             │
-│ │ Gateway :18789  │ │       │  SQLite (metadata index)  │
-│ │ Agent Engine    │ │       │                          │
-│ └─────────────────┘ │       │                          │
-└─────────────────────┘       └──────────────────────────┘
+┌─────────────────────┐        ┌──────────────────────────┐
+│ OpenClaw Server     │   WS   │ ClawWork Desktop App     │
+│ (Node.js process)   │ ◄────► │ (Electron 34 process)    │
+│                     │        │                          │
+│ ┌─────────────────┐ │        │  React 19 UI             │
+│ │ Gateway :18789  │ │        │  SQLite (metadata index) │
+│ │ Agent Engine    │ │        │                          │
+│ └─────────────────┘ │        │                          │
+└─────────────────────┘        └──────────────────────────┘
 ```
 
 **Gateway-Only Architecture (single WS connection):**
