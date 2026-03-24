@@ -74,8 +74,7 @@ export const en: Translations = {
       },
       {
         title: 'Local-First Artifacts',
-        description:
-          'Every AI output persisted to a dedicated workspace — organized by task, indexed by SQLite FTS, and yours to keep.',
+        description: 'Every AI output persisted to a dedicated workspace — organized by task, indexed by SQLite FTS, and yours to keep.',
       },
       {
         title: 'Full-Text Search',
@@ -114,7 +113,7 @@ export const en: Translations = {
   },
   footer: {
     product: {
-      title: 'Product',
+      title: 'ClawWork',
       links: [
         { label: 'Features', href: '#features' },
         { label: 'Quick Start', href: '#quick-start' },
